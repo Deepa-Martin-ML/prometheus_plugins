@@ -1,0 +1,310 @@
+{
+    "prometheus-postgres": {
+        "_documentType": {
+            "Datatype": "text", 
+            "Desc": "PostgreSQL doc type - serverDetails, queryDetails, databaseDetails, tableDetails", 
+            "Label": "Plugin Type", 
+            "Unit": ""
+        }, 
+        "_hostName": {
+            "Datatype": "text", 
+            "Desc": "IP address or HostName", 
+            "Label": "Host Name", 
+            "Unit": ""
+        }, 
+        "_plugin": {
+            "Datatype": "text", 
+            "Desc": "Value of this field should be PostgreSQL for all PostgreSQL related docs", 
+            "Label": "Plugin", 
+            "Unit": ""
+        }, 
+        "database_blk_read_time": {
+            "Datatype": "integer", 
+            "Desc": "Time spent reading data file blocks by backends in this database, in milliseconds", 
+            "Label": "Database Blk Read Time", 
+            "Unit": "counter"
+        }, 
+        "database_blk_write_time": {
+            "Datatype": "date", 
+            "Desc": "Time spent writing data file blocks by backends in this database, in milliseconds", 
+            "Label": "Database Blk Write Time", 
+            "Unit": "counter"
+        }, 
+        "database_blks_hit": {
+            "Datatype": "integer", 
+            "Desc": "Number of times disk blocks were found already in the buffer cache, so that a read was not necessary (this only includes hits in the PostgreSQL buffer cache, not the operating system's file system cache)", 
+            "Label": "Database Blks Hit", 
+            "Unit": "counter"
+        }, 
+        "database_blks_read": {
+            "Datatype": "integer", 
+            "Desc": "Number of disk blocks read in this database", 
+            "Label": "Database Blks Read", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries canceled due to conflicts with recovery in this database. (Conflicts occur only on standby servers; see pg_stat_database_conflicts for details.)", 
+            "Label": "Database Conflicts", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts_confl_bufferpin": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries in this database that have been canceled due to pinned buffers", 
+            "Label": "Database Conflicts Confl Bufferpin", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts_confl_deadlock": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries in this database that have been canceled due to deadlocks", 
+            "Label": "Database Conflicts Confl Deadlock", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts_confl_lock": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries in this database that have been canceled due to lock timeouts", 
+            "Label": "Database Conflicts Confl Lock", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts_confl_snapshot": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries in this database that have been canceled due to old snapshots", 
+            "Label": "Database Conflicts Confl Snapshot", 
+            "Unit": "counter"
+        }, 
+        "database_conflicts_confl_tablespace": {
+            "Datatype": "integer", 
+            "Desc": "Number of queries in this database that have been canceled due to dropped tablespaces", 
+            "Label": "Database Conflicts Confl Tablespace", 
+            "Unit": "counter"
+        }, 
+        "database_deadlocks": {
+            "Datatype": "integer", 
+            "Desc": "Number of deadlocks detected in this database", 
+            "Label": "Database Deadlocks", 
+            "Unit": "counter"
+        }, 
+        "database_numbackends": {
+            "Datatype": "integer", 
+            "Desc": "Number of backends currently connected to this database. This is the only column in this view that returns a value reflecting current state; all other columns return the accumulated values since the last reset.", 
+            "Label": "Database Numbackends", 
+            "Unit": "gauge"
+        }, 
+        "database_stats_reset": {
+            "Datatype": "date", 
+            "Desc": "Time at which these statistics were last reset", 
+            "Label": "Database Stats Reset", 
+            "Unit": "counter"
+        }, 
+        "database_temp_bytes": {
+            "Datatype": "float", 
+            "Desc": "Total amount of data written to temporary files by queries in this database. All temporary files are counted, regardless of why the temporary file was created, and regardless of the log_temp_files setting.", 
+            "Label": "Database Temp Bytes", 
+            "Unit": "counter"
+        }, 
+        "database_temp_files": {
+            "Datatype": "integer", 
+            "Desc": "Number of temporary files created by queries in this database. All temporary files are counted, regardless of why the temporary file was created (e.g., sorting or hashing), and regardless of the log_temp_files setting.", 
+            "Label": "Database Temp Files", 
+            "Unit": "counter"
+        }, 
+        "database_total_size": {
+            "Datatype": "float", 
+            "Desc": "Total size of the database", 
+            "Label": "Database Total Size", 
+            "Unit": "Gauge"
+        }, 
+        "database_tup_deleted": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows deleted by queries in this database", 
+            "Label": "Database Tup Deleted", 
+            "Unit": "counter"
+        }, 
+        "database_tup_fetched": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows fetched by queries in this database", 
+            "Label": "Database Tup Fetched", 
+            "Unit": "counter"
+        }, 
+        "database_tup_inserted": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows inserted by queries in this database", 
+            "Label": "Database Tup Inserted", 
+            "Unit": "counter"
+        }, 
+        "database_tup_returned": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows returned by queries in this database", 
+            "Label": "Database Tup Returned", 
+            "Unit": "counter"
+        }, 
+        "database_tup_updated": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows updated by queries in this database", 
+            "Label": "Database Tup Updated", 
+            "Unit": "counter"
+        }, 
+        "database_xact_commit": {
+            "Datatype": "integer", 
+            "Desc": "Number of transactions in this database that have been committed", 
+            "Label": "Database Xact Commit", 
+            "Unit": "counter"
+        }, 
+        "database_xact_rollback": {
+            "Datatype": "integer", 
+            "Desc": "Number of transactions in this database that have been rolled back", 
+            "Label": "Database Xact Rollback", 
+            "Unit": "counter"
+        }, 
+        "datname": {
+            "Datatype": "text", 
+            "Desc": "Name of the database", 
+            "Label": "Datname", 
+            "Unit": ""
+        }, 
+        "relname": {
+            "Datatype": "text", 
+            "Desc": "Name of the table", 
+            "Label": "Relname", 
+            "Unit": ""
+        }, 
+        "server_connections_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of connections in the server", 
+            "Label": "Server Connections Count", 
+            "Unit": "counter"
+        }, 
+        "server_databases_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of databases in the server", 
+            "Label": "Server Databases Count", 
+            "Unit": "counter"
+        }, 
+        "server_log_size": {
+            "Datatype": "float", 
+            "Desc": "Total size of the log files in the server", 
+            "Label": "Server Log Size", 
+            "Unit": "gauge"
+        }, 
+        "table_analyze_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of times this table has been manually analyzed", 
+            "Label": "Table Analyze Count", 
+            "Unit": "counter"
+        }, 
+        "table_autoanalyze_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of times this table has been analyzed by the autovacuum daemon", 
+            "Label": "Table Autoanalyze Count", 
+            "Unit": "counter"
+        }, 
+        "table_autovacuum_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of times this table has been vacuumed by the autovacuum daemon", 
+            "Label": "Table Autovacuum Count", 
+            "Unit": "counter"
+        }, 
+        "table_idx_scan": {
+            "Datatype": "integer", 
+            "Desc": "Number of index scans initiated on this table", 
+            "Label": "Table Idx Scan", 
+            "Unit": "counter"
+        }, 
+        "table_idx_tup_fetch": {
+            "Datatype": "integer", 
+            "Desc": "Number of live rows fetched by index scans", 
+            "Label": "Table Idx Tup Fetch", 
+            "Unit": "counter"
+        }, 
+        "table_last_analyze": {
+            "Datatype": "date", 
+            "Desc": "Last time at which this table was manually analyzed", 
+            "Label": "Table Last Analyze", 
+            "Unit": "gauge"
+        }, 
+        "table_last_autoanalyze": {
+            "Datatype": "date", 
+            "Desc": "Last time at which this table was analyzed by the autovacuum daemon", 
+            "Label": "Table Last Autoanalyze", 
+            "Unit": "gauge"
+        }, 
+        "table_last_autovacuum": {
+            "Datatype": "date", 
+            "Desc": "Last time at which this table was vacuumed by the autovacuum daemon", 
+            "Label": "Table Last Autovacuum", 
+            "Unit": "gauge"
+        }, 
+        "table_last_vacuum": {
+            "Datatype": "date", 
+            "Desc": "Last time at which this table was manually vacuumed (not counting VACUUM FULL)", 
+            "Label": "Table Last Vacuum", 
+            "Unit": "gauge"
+        }, 
+        "table_n_dead_tup": {
+            "Datatype": "integer", 
+            "Desc": "Estimated number of dead rows", 
+            "Label": "Table N Dead Tup", 
+            "Unit": "gauge"
+        }, 
+        "table_n_live_tup": {
+            "Datatype": "integer", 
+            "Desc": "Estimated number of live rows", 
+            "Label": "Table N Live Tup", 
+            "Unit": "gauge"
+        }, 
+        "table_n_tup_del": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows deleted", 
+            "Label": "Table N Tup Del", 
+            "Unit": "counter"
+        }, 
+        "table_n_tup_hot_upd": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows HOT updated (i.e., with no separate index update required)", 
+            "Label": "Table N Tup Hot Upd", 
+            "Unit": "counter"
+        }, 
+        "table_n_tup_ins": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows inserted", 
+            "Label": "Table N Tup Ins", 
+            "Unit": "counter"
+        }, 
+        "table_n_tup_upd": {
+            "Datatype": "integer", 
+            "Desc": "Number of rows updated", 
+            "Label": "Table N Tup Upd", 
+            "Unit": "counter"
+        }, 
+        "table_seq_scan": {
+            "Datatype": "integer", 
+            "Desc": "Number of sequential scans initiated on this table", 
+            "Label": "Table Seq Scan", 
+            "Unit": "counter"
+        }, 
+        "table_seq_tup_read": {
+            "Datatype": "integer", 
+            "Desc": "Number of live rows fetched by sequential scans", 
+            "Label": "Table Seq Tup Read", 
+            "Unit": "counter"
+        }, 
+        "table_vacuum_count": {
+            "Datatype": "integer", 
+            "Desc": "Number of times this table has been manually vacuumed (not counting VACUUM FULL)", 
+            "Label": "Table Vacuum Count", 
+            "Unit": "counter"
+        }, 
+        "tags": {
+            "Datatype": "text", 
+            "Desc": "User specific tags", 
+            "Label": "Tags", 
+            "Unit": ""
+        }, 
+        "time": {
+            "Datatype": "date", 
+            "Desc": "Time at which document was processed by plugin in UTC", 
+            "Label": "Timestamp", 
+            "Unit": "UTC"
+        }
+    }
+}

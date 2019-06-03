@@ -1,0 +1,55 @@
+{
+  "prometheus-linux": {
+
+    "node_procs_*": [
+      {
+        "filter_rule": {
+          "must": {},
+          "must_not": {}
+        },
+        "record_classifier": {
+          "classifiers" : [],
+          "prefix" : false
+        },
+        "_documentType": "proc_stats",
+        "aggregation": [
+          "SUM"
+        ],
+        "result_transformation": {},
+        "label": "process"
+      }
+    ],
+    "node_cpu{*}": [
+      {
+        "filter_rule": {
+          "must": {},
+          "must_not": {}
+        },
+        "record_classifier": {
+          "classifiers" : ["cpu"],
+          "prefix" : false
+        },
+        "_documentType": "cpu_stats",
+        "aggregation": ["SUM"],
+        "result_transformation": {},
+        "label": "cpu_util"
+      }
+    ],
+    "node_disk_*{*}": [
+      {
+        "filter_rule": {
+          "must": {},
+          "must_not": {}
+        },
+        "record_classifier": {
+          "classifiers" : ["device"],
+          "prefix" : false
+        },
+        "_documentType": "disk_stats",
+        "aggregation": [],
+        "result_transformation": {},
+        "label": "disk"
+      }
+    ]
+  }
+}

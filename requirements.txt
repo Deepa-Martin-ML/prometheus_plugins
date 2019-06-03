@@ -1,0 +1,3 @@
+# Python PIP requirements
+
+requests==2.19.1

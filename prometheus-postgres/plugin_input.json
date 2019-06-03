@@ -1,0 +1,44 @@
+{
+  "prometheus-apache": {
+    "config": [
+      {
+        "fieldName": "port",
+        "label": "Port",
+        "dataType": "string",
+        "Mandatory": true,
+        "defaultValue": "9117",
+        "min": "",
+        "max": "",
+        "tooltip": "Port for Prometheus apache exporter"
+      }
+    ]
+  },
+  "prometheus-linux": {
+    "config": [
+      {
+        "fieldName": "port",
+        "label": "Port",
+        "dataType": "string",
+        "Mandatory": true,
+        "defaultValue": "9100",
+        "min": "",
+        "max": "",
+        "tooltip": "Port for Prometheus node exporter"
+      }
+    ]
+  },
+  "prometheus-postgres": {
+    "config": [
+      {
+        "fieldName": "port",
+        "label": "Port",
+        "dataType": "string",
+        "Mandatory": true,
+        "defaultValue": "9187",
+        "min": "",
+        "max": "",
+        "tooltip": "Port for Prometheus postgres exporter"
+      }
+    ]
+  }
+}

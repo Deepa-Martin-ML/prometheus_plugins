@@ -1,0 +1,250 @@
+{
+  "prometheus-linux": {
+    "disk_stats": [
+      {
+        "_plugin": {
+          "Datatype": "",
+          "Desc": "Plugin that generated the document",
+          "Unit": "",
+          "Label": "Plugin"
+        }
+      },
+      {
+        "_documentType": {
+          "Datatype": "",
+          "Desc": "cloudwatch doc type - classicELBDetails",
+          "Unit": "",
+          "Label": "Plugin Type"
+        }
+      },
+      {
+        "time": {
+          "Datatype": "",
+          "Desc": "Time at which document was processed by plugin in UTC",
+          "Unit": "UTC",
+          "Label": "Timestamp"
+        }
+      },
+      {
+        "tags": {
+          "Datatype": "",
+          "Desc": "User specific tags",
+          "Unit": "",
+          "Label": "Tags"
+        }
+      },
+      {
+        "device": {
+          "Datatype": "",
+          "Desc": "",
+          "Unit": "",
+          "Label": "Device"
+        }
+      },
+      {
+        "disk_writes_completed": {
+          "Datatype": "",
+          "Desc": "The total number of writes completed successfully.",
+          "Unit": "counter",
+          "Label": "Disk Writes Completed"
+        }
+      },
+      {
+        "disk_io_now": {
+          "Datatype": "",
+          "Desc": "The number of I/Os currently in progress.",
+          "Unit": "gauge",
+          "Label": "Disk Io Now"
+        }
+      },
+      {
+        "disk_read_time_ms": {
+          "Datatype": "",
+          "Desc": "The total number of milliseconds spent by all reads.",
+          "Unit": "counter",
+          "Label": "Disk Read Time Ms"
+        }
+      },
+      {
+        "disk_io_time_weighted": {
+          "Datatype": "",
+          "Desc": "The weighted # of milliseconds spent doing I/Os. See https://www.kernel.org/doc/Documentation/iostats.txt.",
+          "Unit": "counter",
+          "Label": "Disk Io Time Weighted"
+        }
+      },
+      {
+        "disk_sectors_written": {
+          "Datatype": "",
+          "Desc": "The total number of sectors written successfully.",
+          "Unit": "counter",
+          "Label": "Disk Sectors Written"
+        }
+      },
+      {
+        "disk_reads_merged": {
+          "Datatype": "",
+          "Desc": "The total number of reads merged. See https://www.kernel.org/doc/Documentation/iostats.txt.",
+          "Unit": "counter",
+          "Label": "Disk Reads Merged"
+        }
+      },
+      {
+        "disk_reads_completed": {
+          "Datatype": "",
+          "Desc": "The total number of reads completed successfully.",
+          "Unit": "counter",
+          "Label": "Disk Reads Completed"
+        }
+      },
+      {
+        "disk_write_time_ms": {
+          "Datatype": "",
+          "Desc": "This is the total number of milliseconds spent by all writes.",
+          "Unit": "counter",
+          "Label": "Disk Write Time Ms"
+        }
+      },
+      {
+        "disk_bytes_written": {
+          "Datatype": "",
+          "Desc": "The total number of bytes written successfully.",
+          "Unit": "counter",
+          "Label": "Disk Bytes Written"
+        }
+      },
+      {
+        "disk_writes_merged": {
+          "Datatype": "",
+          "Desc": "The number of writes merged. See https://www.kernel.org/doc/Documentation/iostats.txt.",
+          "Unit": "counter",
+          "Label": "Disk Writes Merged"
+        }
+      },
+      {
+        "disk_io_time_ms": {
+          "Datatype": "",
+          "Desc": "Total Milliseconds spent doing I/Os.",
+          "Unit": "counter",
+          "Label": "Disk Io Time Ms"
+        }
+      },
+      {
+        "disk_bytes_read": {
+          "Datatype": "",
+          "Desc": "The total number of bytes read successfully.",
+          "Unit": "counter",
+          "Label": "Disk Bytes Read"
+        }
+      },
+      {
+        "disk_sectors_read": {
+          "Datatype": "",
+          "Desc": "The total number of sectors read successfully.",
+          "Unit": "counter",
+          "Label": "Disk Sectors Read"
+        }
+      }
+    ],
+    "proc_stats": [
+      {
+        "_plugin": {
+          "Datatype": "",
+          "Desc": "Plugin that generated the document",
+          "Unit": "",
+          "Label": "Plugin"
+        }
+      },
+      {
+        "_documentType": {
+          "Datatype": "",
+          "Desc": "cloudwatch doc type - classicELBDetails",
+          "Unit": "",
+          "Label": "Plugin Type"
+        }
+      },
+      {
+        "time": {
+          "Datatype": "",
+          "Desc": "Time at which document was processed by plugin in UTC",
+          "Unit": "UTC",
+          "Label": "Timestamp"
+        }
+      },
+      {
+        "tags": {
+          "Datatype": "",
+          "Desc": "User specific tags",
+          "Unit": "",
+          "Label": "Tags"
+        }
+      },
+      {
+        "process_blocked": {
+          "Datatype": "",
+          "Desc": "Number of processes blocked waiting for I/O to complete.",
+          "Unit": "gauge",
+          "Label": "Process Blocked"
+        }
+      },
+      {
+        "process_running": {
+          "Datatype": "",
+          "Desc": "Number of processes in runnable state.",
+          "Unit": "gauge",
+          "Label": "Process Running"
+        }
+      }
+    ],
+    "cpu_stats": [
+      {
+        "_plugin": {
+          "Datatype": "",
+          "Desc": "Plugin that generated the document",
+          "Unit": "",
+          "Label": "Plugin"
+        }
+      },
+      {
+        "_documentType": {
+          "Datatype": "",
+          "Desc": "cloudwatch doc type - classicELBDetails",
+          "Unit": "",
+          "Label": "Plugin Type"
+        }
+      },
+      {
+        "time": {
+          "Datatype": "",
+          "Desc": "Time at which document was processed by plugin in UTC",
+          "Unit": "UTC",
+          "Label": "Timestamp"
+        }
+      },
+      {
+        "tags": {
+          "Datatype": "",
+          "Desc": "User specific tags",
+          "Unit": "",
+          "Label": "Tags"
+        }
+      },
+      {
+        "cpu": {
+          "Datatype": "",
+          "Desc": "",
+          "Unit": "",
+          "Label": "Cpu"
+        }
+      },
+      {
+        "sum_cpu_util": {
+          "Datatype": "",
+          "Desc": "[SUM] Seconds the cpus spent in each mode.",
+          "Unit": "counter",
+          "Label": "Sum Cpu Util"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "prometheus-linux": {
+    "config": [
+      {
+        "fieldName": "port",
+        "label": "Port",
+        "dataType": "string",
+        "Mandatory": true,
+        "defaultValue": "9100",
+        "min": "",
+        "max": "",
+        "tooltip": "Port for Prometheus node exporter"
+      }
+    ]
+  }
+}
