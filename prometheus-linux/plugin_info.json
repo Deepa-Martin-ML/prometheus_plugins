@@ -1,7 +1,7 @@
 [
   {
     "pluginType": "prometheus-linux",
-    "filename": "../common/prometheus_poller.py",
+    "filename": "prometheus_linux.py",
     "pluginCodeType": "python",
     "enable": true
   }

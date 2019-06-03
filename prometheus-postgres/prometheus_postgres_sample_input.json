@@ -1,0 +1,52 @@
+{
+    "monitoringType": "Poller",
+    "name": "prometheus-postgres",
+    "config": {
+        "host_details": [{
+            "name": "prometheus-postgres",
+            "tags": {
+                "instanceid": "i-06836d06c2eac94a6",
+                "Name": "prometheus-postgres",
+                "appName": "Prometheus"
+            },
+            "ip": "127.0.0.1",
+            "port": "9186",
+            "application": "Prometheus",
+            "host": "127.0.0.1",
+            "targets": ["prometheus"]
+        }],
+        "interval": 30,
+        "enabled": true,
+        "targets": [],
+        "tags": {}
+    },
+    "log_dir": "/var/log/deepinsight/plugins",
+    "server_port": "9008",
+    "deployment": "default",
+    "type": "prometheus-postgres",
+    "targets": [{
+        "type": "elasticsearch",
+        "config": {
+            "index": "es_postgres",
+            "host": "10.11.43.1",
+            "port": 9200
+        },
+        "name": "jan19"
+    }, {
+        "type": "elasticsearch",
+        "config": {
+            "index": "es_postgres",
+            "host": "10.11.34.1",
+            "port": 9200
+        },
+        "name": "selfmonitordi"
+    }, {
+        "type": "elasticsearch",
+        "config": {
+            "index": "es_postgres",
+            "host": "ec2-18-219-52-226.us-east-2.compute.amazonaws.com",
+            "port": 9200
+        },
+        "name": "prometheus"
+    }]
+}

@@ -1,0 +1,40 @@
+{
+  "monitoringType": "Poller",
+  "name": "prometheus-linux",
+  "type": "prometheus-linux",
+  "config": {
+    "host_details": [
+      {
+        "port": "9100",
+        "ip": "127.0.0.1",
+        "application": "app1",
+        "host": "127.0.0.1",
+        "tags": {
+          "instanceid": "sample-VM",
+          "appName": "app1"
+        },
+        "targets": [
+          "target1"
+        ]
+      }
+    ],
+    "interval": 100,
+    "enabled": true,
+    "targets": [],
+    "tags": {}
+  },
+  "log_dir": "/var/log/deepinsight/plugins",
+  "server_port": "9008",
+  "deployment": "default",
+  "targets": [
+    {
+      "type": "elasticsearch",
+      "config": {
+        "index": "snappyflow",
+        "host": "127.0.0.1",
+        "port": 9200
+      },
+      "name": "target1"
+    }
+  ]
+}

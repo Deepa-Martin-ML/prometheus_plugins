@@ -1,19 +1,7 @@
 [
   {
     "pluginType": "prometheus-apache",
-    "filename": "prometheus_poller.py",
-    "pluginCodeType": "python",
-    "enable": true
-  },
-  {
-    "pluginType": "prometheus-postgres",
-    "filename": "prometheus_poller.py",
-    "pluginCodeType": "python",
-    "enable": true
-  },
-  {
-    "pluginType": "prometheus-linux",
-    "filename": "prometheus_poller.py",
+    "filename": "prometheus_apache.py",
     "pluginCodeType": "python",
     "enable": true
   }
